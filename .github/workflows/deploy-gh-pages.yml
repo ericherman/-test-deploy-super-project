@@ -33,6 +33,7 @@ jobs:
         run: |
           cd test-deploy-migration-branch-to-workflow
           git checkout gh-pages
+          rm -rf .git
       - name: assemble super-proj gh-pages
         run: |
           mkdir -pv _site
